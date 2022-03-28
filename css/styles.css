@@ -15,6 +15,7 @@ Tertiary Color (darker blue): 242582
   --secondary-color: #f64c72;
   --tertiary-color: #242582;
   --gradient-top-color: #5050bb;
+  --font-color: white;
   --dark-grey: #2b2b2b;
   --white: white;
   --a-visited: #b6b6b8;
@@ -26,7 +27,7 @@ Tertiary Color (darker blue): 242582
 }
 
 html {
-  height: var(--height-100pct);
+  min-height: var(--height-100pct);
 }
 
 
@@ -38,6 +39,7 @@ body {
   height: var(--height-100pct);
   color: var(--white);
   background: linear-gradient(to top left, var(--gradient-top-color), var(--primary-color), var(--tertiary-color));
+
 }
 
 h1 {
@@ -143,7 +145,7 @@ td {
 .page-header {
   display: flex;
   width: 100%;
-  padding: 20px;
+  padding: 5px;
   border-bottom: 1px solid;
   border-bottom-color: rgb(65, 64, 64);
 }
