@@ -29,10 +29,13 @@ Tertiary Color (darker blue): 242582
     font-size: 16px;
     line-height: 1.25;
     height: 100%;
+    background-color: #f3f3f3;
+    /*
     color: white;
     background: -webkit-gradient(linear, right bottom, left top, from(#5050bb), color-stop(#2f2fa2), to(#242582));
     background: -o-linear-gradient(bottom right, #5050bb, #2f2fa2, #242582);
     background: linear-gradient(to top left, #5050bb, #2f2fa2, #242582);
+    */
   }
   
   h1 {
