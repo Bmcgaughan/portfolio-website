@@ -19,7 +19,7 @@ Tertiary Color (darker blue): 242582
   }
   
   html {
-    height: 100%;
+    min-height: 100%;
   }
   
   
