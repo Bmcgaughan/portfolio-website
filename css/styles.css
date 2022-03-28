@@ -1,0 +1,258 @@
+/*
+Colors used
+Text Color (white): white;
+Primary Color (darkish blue): #2f2fa2
+Secondary Color (reddish): #f64c72;
+Tertiary Color (darker blue): 242582
+ */
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #2f2fa2;
+  --secondary-color: #f64c72;
+  --tertiary-color: #242582;
+  --gradient-top-color: #5050bb;
+  --dark-grey: #2b2b2b;
+  --white: white;
+  --a-visited: #b6b6b8;
+  --a-active: #ed0055;
+  --height-100pct: 100%;
+  --font-weight-default: 400;
+  --font-weight-bold: 700;
+  --transition-button-fade: 0.2s opacity;
+}
+
+html {
+  height: var(--height-100pct);
+}
+
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: var(--font-weight-default);
+  font-size: 16px;
+  line-height: 1.25;
+  height: var(--height-100pct);
+  color: var(--white);
+  background: linear-gradient(to top left, var(--gradient-top-color), var(--primary-color), var(--tertiary-color));
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: var(--font-weight-bold);
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: var(--font-weight-bold);
+}
+
+a {
+  color: var(--white);
+  text-decoration: underline .01em rgba(255, 255, 255, 0);
+  text-underline-offset: 3px;
+  transition: text-decoration-color 300ms ;
+}
+
+a:visited {
+  color: var(--a-visited);
+  transition: color .25s ease-out;
+
+}
+
+a:hover,
+a:focus {
+text-decoration-color: var(--white);
+}
+
+a:active {
+  /* selected link */
+  color: var(--a-active);
+}
+
+a.button:visited {
+  color: var(--white);
+}
+
+.navigation-list__item--active {
+  text-decoration: underline overline;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--secondary-color);
+}
+
+.navigation-list {
+    list-style-type: none;
+    transition: var(--transition-button-fade);
+
+  }
+  
+  .navigation-list li {
+    display: inline-block;
+    margin-left: 15px;
+  }
+
+button,
+.submit__contact,
+.button {
+  border: none;
+  font-family: inherit;
+  background-color: var(--secondary-color);
+  color: var(--white);
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  transition: var(--transition-button-fade);
+}
+
+button:hover,
+button:focus,
+.button:hover,
+.button:focus,
+.submit__contact:hover,
+.submit__contact:focus {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.button__secondary {
+  border: 2px solid var(--secondary-color);
+  background-color: var(--primary-color);
+}
+
+th,
+td {
+  border: 1px solid;
+}
+
+.profile {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.profile__portrait {
+  float: left;
+  width: 250px;
+  margin-right: 40px;
+  border-radius: 50%;
+}
+
+.page-header {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  border-bottom: 1px solid;
+  border-bottom-color: rgb(65, 64, 64);
+}
+
+.page-header__item {
+  flex: 0 1 200px;
+}
+
+.page-header__item:last-child {
+  flex-grow: 1;
+  text-align: right;
+}
+
+.page-footer {
+  clear: both;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  margin: 5px;
+}
+
+.grid__item {
+  background-color: var(--white);
+  padding: 5px;
+  color: var(--tertiary-color);
+  border-radius: 5px;
+}
+
+.page-header__logo {
+  height: 100px;
+  width: 200px;
+}
+
+.about--illustration {
+    margin-top: 10px;
+}
+
+@keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+  50% {
+    fill: #fcffad;
+  }
+  100% {
+    fill: #f76414;
+  }
+}
+
+.illustration--sun {
+  animation: 30s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+    from {
+      transform: translate(500px, 200px);
+    }
+    to {
+      transform: translate(750px, 200px);
+    }
+  }
+  
+  @keyframes cloud-move-reverse {
+      from {
+        transform: translate(1000px, 350px);
+      }
+      to {
+        transform: translate(500px, 350px);
+      }
+    }
+
+.cloud-back {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+.cloud-front {
+    animation: 30s cloud-move-reverse infinite alternate linear;
+  }
+
+
+@media all and (max-width: 500px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media all and (min-width: 500px) and (max-width: 750px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media all and (max-width: 750px) {
+  .grid {
+    grid-gap: 10px;
+  }
+  .grid__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+  h1 {
+    font-size: 22px;
+  }
+}

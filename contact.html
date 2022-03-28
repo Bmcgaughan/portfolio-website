@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Brian's Contact Page</title>
+    <link rel="shortcut icon" href="./img/bmcg.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.production.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <header class="page-header">
+        <img
+          src="img/logo.png"
+          alt=""
+          class="page-header__item"
+        />
+        <nav class="main-navigation page-header__item">
+          <ul role="menubar" class="navigation-list">
+            <li role="presentation">
+              <a
+                href="index.html"
+                role="menuitem"
+                class="navigation-list__item navigation-list__item"
+                >Home</a
+              >
+            </li>
+            <li role="presentation">
+              <a
+                href="work.html"
+                role="menuitem"
+                class="navigation-list__item navigation-list__item"
+                >My Work</a
+              >
+            </li>
+            <li role="presentation">
+              <a href="about.html" role="menuitem" , class="navigation-list__item"
+                >About Me</a
+              >
+            </li>
+            <li role="presentation">
+              <a
+                href="contact.html"
+                role="menuitem"
+                ,
+                class="navigation-list__item--active"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+    <div>
+      <h1>Contact</h1>
+      <div>
+        Brian McGaughan<br />
+        Montclair, NJ<br />
+        <a href="tel:+1111">Telephone: 1-973-111-1111</a><br />
+        <a href="mailto:@gmail.com">email@gmail.com</a><br />
+        <a href="mailto:email@gmail.com">Contact me</a>
+      </div>
+    </div>
+
+    <div>
+      <form action="" method="Post" id="contact-form">
+        <label class="standard-label" for="contact-email">E-mail: </label>
+        <input type="email" id="contact-email" required /><br />
+        <label class="standard-label" for="contact-telephone">Telephone:</label>
+        <input
+          type="tel"
+          id="contact-telephone"
+          pattern="\d{3}[\-]\d{3}[\-]\d{4}"
+          required
+        />
+        <br />
+        <label class="standard-label" for="contact-message">Message: </label>
+        <textarea maxlength="240" id="contact-message" required></textarea>
+        <br />
+        <input class="submit__contact" type="submit" value="Send Message" />
+      </form>
+    </div>
+
+    <footer class="page-footer">
+        <p>Find me on</p>
+        <div class="social-media">
+          <a href="https://github.com/Bmcgaughan/Bmcgaughan" target="_blank"><img src="img/github.svg" alt="Github" /></a>
+          <!-- 
+            I dont have a twitter account :(
+            <img src="img/twiiter.svg" alt="Twitter" />  
+          -->
+          
+          <a href="https://www.linkedin.com/in/brian-mcgaughan/" target="_blank"> <img src="img/linkedIn.svg" alt="LinkedIn" /></a>
+        </div>
+      </footer>
+
+    <script src="js/tota11y.min.js"></script>
+  </body>
+</html>
