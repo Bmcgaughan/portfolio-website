@@ -37,13 +37,12 @@ body {
   line-height: 1.25;
   height: var(--height-100pct);
   color: var(--white);
-  background:
-    linear-gradient(
-      to top left,
-      var(--gradient-top-color),
-      var(--primary-color),
-      var(--tertiary-color)
-    );
+  background: linear-gradient(
+    to top left,
+    var(--gradient-top-color),
+    var(--primary-color),
+    var(--tertiary-color)
+  );
 }
 
 h1 {
@@ -140,7 +139,6 @@ td {
 
 th {
   border-bottom: 1px solid;
-  
 }
 
 .profile {
@@ -226,6 +224,50 @@ a.secondarybutton {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.contact {
+  margin: 15px;
+}
+.contact__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact__row {
+  display: flex;
+  flex-direction: row;
+  flex: wrap;
+  gap: 20px;
+  width: 100%;
+}
+
+.contact__flexleft {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  width: 50%;
+}
+
+.contact__flexright {
+  flex-direction: column;
+  width: 50%;
+}
+
+.contact__flexright div {
+  width: 100%;
+}
+
+#contact-message,
+#contact-telephone,
+#contact-email {
+  width: 250px;
+}
+
+#contact-message {
+  height: 100px;
 }
 
 @keyframes color-change {
