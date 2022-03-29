@@ -154,7 +154,7 @@ td {
   padding: 5px;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid;
+  border-bottom: 2px solid;
   border-bottom-color: rgb(65, 64, 64);
 }
 .main-navigation {
@@ -212,6 +212,13 @@ a.secondarybutton {
   appearance: button;
   text-decoration: none;
   color: initial;
+}
+
+.about-about,
+.about-about div{
+display: flex;
+flex-direction: column;
+align-items: center;
 }
 
 @keyframes color-change {
