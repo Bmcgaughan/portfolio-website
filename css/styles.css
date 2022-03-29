@@ -177,17 +177,23 @@ td {
   margin-top: auto;
 }
 
-.grid {
+.work-list{
+  margin: 0 auto;
+  max-width: 98%;
+}
+
+.work-list__grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 10px;
-  margin: 5px;
+
 }
 
 .grid__item {
   background-color: var(--white);
   padding: 5px;
   color: var(--tertiary-color);
+  box-shadow: rgba(20, 24, 27, 0.2) 0px 8px 24px;;
   border-radius: 5px;
 }
 
