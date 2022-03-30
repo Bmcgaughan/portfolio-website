@@ -19,17 +19,17 @@ Tertiary Color (darker blue): 242582
 }
 
 html {
-  min-height: 100%;
-  margin: 0%;
+  height: 100%;
+  margin: 0;
 }
 
 body {
+  min-height: 100%;
+  margin:0;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 16px;
-  margin: 0%;
   line-height: 1.25;
-  height: 100%;
   color: white;
   background: -webkit-gradient(
     linear,
@@ -52,6 +52,7 @@ h2 {
   font-size: 24px;
   font-weight: 700;
 }
+
 
 a {
   color: white;
@@ -253,7 +254,6 @@ th {
   -ms-flex-direction: column;
   flex-direction: column;
   text-align: center;
-  margin-top: auto;
 }
 
 .work-list {
@@ -281,6 +281,12 @@ th {
 .page-header__logo {
   height: 100px;
   width: 200px;
+}
+
+.svg-container {
+  width: 100%;
+  position: absolute;
+  bottom:0;
 }
 
 .about--illustration {
@@ -505,7 +511,7 @@ a.secondarybutton {
 }
 
 @media all and (max-width: 500px) {
-  .grid {
+  .work-list__grid{
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
@@ -517,7 +523,7 @@ a.secondarybutton {
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
-  .grid {
+  .work-list__grid {
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
   }
@@ -529,7 +535,7 @@ a.secondarybutton {
 }
 
 @media all and (max-width: 750px) {
-  .grid {
+  .work-list__grid {
     grid-gap: 10px;
   }
 
