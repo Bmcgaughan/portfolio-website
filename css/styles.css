@@ -28,21 +28,24 @@ Tertiary Color (darker blue): 242582
 
 html {
   min-height: var(--height-100pct);
+  margin: 0%;
 }
 
 body {
   font-family: "Poppins", sans-serif;
   font-weight: var(--font-weight-default);
   font-size: 16px;
+  margin: 0%;
   line-height: 1.25;
   height: var(--height-100pct);
   color: var(--white);
-  background: linear-gradient(
-    to top left,
-    var(--gradient-top-color),
-    var(--primary-color),
-    var(--tertiary-color)
-  );
+  background:
+    linear-gradient(
+      to top left,
+      var(--gradient-top-color),
+      var(--primary-color),
+      var(--tertiary-color)
+    );
 }
 
 h1 {
@@ -144,6 +147,7 @@ th {
 .profile {
   max-width: 700px;
   margin: 0 auto;
+  height: 100%
 }
 
 .profile__portrait {
@@ -208,8 +212,13 @@ th {
 }
 
 .about--illustration {
-  margin-top: 10px;
+  background-color: white;
 }
+
+.about-skills{
+  background-color: white;
+}
+
 
 a.secondarybutton {
   -webkit-appearance: button;
@@ -220,15 +229,39 @@ a.secondarybutton {
 }
 
 .about-about,
-.about-about div {
+.about__title,
+.about-skills,
+.about-table{
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+.about-table {
+  background-color: white;
+  color: black;
+}
+
+.about-svg {
+  display: flex;
+  flex-grow: 1;
+  width: 100%;
+
+}
+
+.about-svg--image {
+  position: relative;
+  flex-grow: 1;
+  flex-shrink: 1;
+  bottom: -15px;
+  width: 100%;
+  height: 100%;
+}
+
 .contact {
   margin: 15px;
 }
+
 .contact__header {
   display: flex;
   flex-direction: column;
@@ -259,6 +292,7 @@ a.secondarybutton {
 .contact__flexright div {
   width: 100%;
 }
+
 
 #contact-message,
 #contact-telephone,
