@@ -19,72 +19,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
-    <header class="page-header">
-      <nav class="main-navigation page-header__item">
-        <img
-          src="img/logo_rs.png"
-          alt=""
-          class="page-header__item"
-          width="250"
-          height="75"
-        />
-        <ul role="menubar" class="navigation-list">
-          <li role="presentation">
-            <a
-              href="index.html"
-              role="menuitem"
-              class="navigation-list__item navigation-list__item--active"
-              >Home
-            </a>
-          </li>
-          <li role="presentation">
-            <a href="about.html" role="menuitem" class="navigation-list__item"
-              >About Me</a
-            >
-          </li>
-          <li role="presentation">
-            <a
-              href="work.html"
-              role="menuitem"
-              class="navigation-list__item navigation-list__item"
-              >My Work</a
-            >
-          </li>
-          
-          <li role="presentation">
-            <a
-              href="contact.html"
-              role="menuitem"
-              class="navigation-list__item--btn"
-              >Contact</a
-            >
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <div class="page-wrapper">
+      <header class="page-header">
+        <nav class="main-navigation page-header__item">
+          <img
+            src="img/logo_rs.png"
+            alt=""
+            class="page-header__item"
+            width="250"
+            height="75"
+          />
+          <ul role="menubar" class="navigation-list">
+            <li role="presentation">
+              <a
+                href="index.html"
+                role="menuitem"
+                class="navigation-list__item navigation-list__item--active"
+                >Home
+              </a>
+            </li>
+            <li role="presentation">
+              <a href="about.html" role="menuitem" class="navigation-list__item"
+                >About Me</a
+              >
+            </li>
+            <li role="presentation">
+              <a
+                href="work.html"
+                role="menuitem"
+                class="navigation-list__item navigation-list__item"
+                >My Work</a
+              >
+            </li>
 
-    <section>
-      <div class="upper">
-        <div class="profile">
-          <img src="img/IMG_0329.jpeg" class="profile__portrait" alt="" />
-          <h1>Nice to meet you!</h1>
+            <li role="presentation">
+              <a
+                href="contact.html"
+                role="menuitem"
+                class="navigation-list__item--btn"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
 
-          <p>
-            My name is Brian McGaughan. I am a <span>web</span> developer from
-            New Jersey.
-          </p>
+      <section class="index-body">
+        <div class="index-body__grid">
+          <div class="idx-grid__item idx-grid-flex-right">
+            <img src="img/IMG_0329.jpeg" class="profile__portrait" alt="" />
+          </div>
+          <div class="idx-grid__item idx-grid-flex-left">
+            <h1>Nice to meet you!</h1>
+            <p>
+              My name is Brian McGaughan. I am a <span>web</span> developer from
+              New Jersey.
+            </p>
+            <div>
+              <a href="https://github.com/Bmcgaughan/Bmcgaughan" target="_blank"
+                ><button class="button__secondary">
+                  Check out some of my Code
+                </button></a
+              >
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
+      <footer class="idx-footer">
+        <div class="svg-container">
+          <svg
+            class="svg__footer"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1440 319"
+            preserveAspectRatio="none"
+            height="100%"
+            width="100%"
+          >
+            <path
+              fill="#fff"
+              fill-opacity="1"
+              d="M0,160L80,149.3C160,139,320,117,480,138.7C640,160,800,224,960,218.7C1120,213,1280,139,1360,101.3L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+            ></path>
+          </svg>
+        </div>
+        <div class="idx-social-flex">
+          <p>Find me on</p>
+          <div class="social-media">
+            <a href="https://github.com/Bmcgaughan/Bmcgaughan" target="_blank"
+              ><img src="img/github.svg" alt="Github"
+            /></a>
+            <a
+              href="https://www.linkedin.com/in/brian-mcgaughan/"
+              target="_blank"
+            >
+              <img src="img/linkedIn.svg" alt="LinkedIn"
+            /></a>
+          </div>
+        </div>
+      </footer>
+    </div>
 
-      <div>
-        <a href="https://github.com/Bmcgaughan/Bmcgaughan" target="_blank"
-          ><button class="button__secondary">
-            Check out some of my Code
-          </button></a
-        >
-      </div>
-    </section>
-
+    <!--
     <footer class="page-footer">
       <p>Find me on</p>
       <div class="social-media">
@@ -109,5 +144,6 @@
         ></path>
       </svg>
     </div>
+    -->
   </body>
 </html>
