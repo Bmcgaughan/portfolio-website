@@ -7,18 +7,81 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
       rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
     />
     <link
       rel="stylesheet"
       type="text/css"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
-    <link rel="stylesheet" type="text/css" href="css/style.production.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="img/logo_rs.png" alt="Brian Logo" width="250" height="65" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">My Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Me</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="main-section">
+      <div class="row">
+        <div class="col-sm-12 intro-content">
+          <h4>Hi! My name is</h4>
+          <h1 class="big-heading">Brian McGaughan</h1>
+          <h1 class="big-heading">I code things.</h1>
+          <p>
+            I am a Full Stack developer focused on building products that
+            deliver value to customers and internal teams.
+          </p>
+        </div>
+        <div class="d-inline-flex">
+          <a
+            class="code-link__link"
+            href="https://github.com/Bmcgaughan/Bmcgaughan"
+            target="_blank"
+            >Check out some of my code</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!--
     <div class="page-wrapper">
       <header class="page-header">
         <nav class="main-navigation page-header__item">
@@ -118,32 +181,12 @@
         </div>
       </footer>
     </div>
-
-    <!--
-    <footer class="page-footer">
-      <p>Find me on</p>
-      <div class="social-media">
-        <a href="https://github.com/Bmcgaughan/Bmcgaughan" target="_blank"
-          ><img src="img/github.svg" alt="Github"
-        /></a>
-        <a href="https://www.linkedin.com/in/brian-mcgaughan/" target="_blank">
-          <img src="img/linkedIn.svg" alt="LinkedIn"
-        /></a>
-      </div>
-    </footer>
-    <div class="svg-container">
-      <svg
-        class="svg__footer"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1440 319"
-      >
-        <path
-          fill="#fff"
-          fill-opacity="1"
-          d="M0,160L80,149.3C160,139,320,117,480,138.7C640,160,800,224,960,218.7C1120,213,1280,139,1360,101.3L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
-        ></path>
-      </svg>
-    </div>
-    -->
+-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/scripts.js"></script>
   </body>
 </html>
