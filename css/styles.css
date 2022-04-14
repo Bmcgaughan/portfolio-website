@@ -26,7 +26,12 @@ Tertiary Color (darker blue): 242582
   --transition-button-fade: 0.2s opacity;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  height: 100%;
   font-family: 'Inter', sans-serif;
   font-weight: var(--font-weight-default);
   font-size: 16px;
@@ -40,6 +45,7 @@ body {
 
 .main-section {
   padding: 0px 150px;
+  min-height: 100vh;
 }
 
 .main-section h4 {
@@ -61,7 +67,6 @@ h1.big-heading {
   max-width: 70%;
 }
 
-
 .code-link__link {
   margin-top: 50px;
   padding: 1.25rem;
@@ -71,62 +76,13 @@ h1.big-heading {
   cursor: pointer;
 }
 
-th,
-td {
-  border-right: 1px solid;
-  text-align: center;
+.about-section {
+  padding: 25px 0px;
 }
 
-th {
-  border-bottom: 1px solid;
-}
 
-@keyframes color-change {
-  0% {
-    fill: #edc655;
-  }
 
-  50% {
-    fill: #fcffad;
-  }
-
-  100% {
-    fill: #f76414;
-  }
-}
-
-.illustration--sun {
-  animation: 30s color-change infinite alternate linear;
-}
-
-@keyframes cloud-move {
-  from {
-    transform: translate(500px, 200px);
-  }
-
-  to {
-    transform: translate(750px, 200px);
-  }
-}
-
-@keyframes cloud-move-reverse {
-  from {
-    transform: translate(1000px, 350px);
-  }
-
-  to {
-    transform: translate(500px, 350px);
-  }
-}
-
-.cloud-back {
-  animation: 30s cloud-move infinite alternate linear;
-}
-
-.cloud-front {
-  animation: 30s cloud-move-reverse infinite alternate linear;
-}
-
+/* tiny screens */
 @media all and (max-width: 500px) {
   .grid {
     grid-template-columns: 1fr;
@@ -146,6 +102,7 @@ th {
   }
 }
 
+/*medium screens*/
 @media all and (min-width: 500px) and (max-width: 750px) {
   .grid {
     grid-template-columns: 1fr 1fr;
@@ -164,6 +121,7 @@ th {
   }
 }
 
+/*tablet screens*/
 @media all and (max-width: 750px) {
   .grid {
     grid-gap: 10px;
