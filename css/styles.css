@@ -56,13 +56,16 @@ body {
   line-height: 1.6;
 }
 
+.socials {
+  text-align: center;
+}
+
 .home-hero__cta {
   margin-top: 2rem;
   text-align: center;
 }
 
 .btn--bg {
-  padding: ;
   font-size: 1rem;
 }
 
