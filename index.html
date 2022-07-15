@@ -75,7 +75,7 @@
           <p class="text-primary">
             I am a Full Stack Developer with a background in product management,
             <br />
-            legal data analytics, and building high performance teams.
+            legal data analytics, and building high value products.
           </p>
           <div class="socials">
             <a href="https://github.com/Bmcgaughan/Bmcgaughan" target="_blank"
@@ -117,7 +117,7 @@
                 I have developed many of the internal and client facing tools we
                 use and am always looking for opportunites to learn and to make cool things.
               </p>
-              <div class="about-cv">
+              <div class="about-cv d-flex justify-content-center">
                 <a
                   href="files/Brian.McGaughan.pdf"
                   target="_blank"
@@ -169,10 +169,10 @@
               <img
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
               />
-            </div>  <!-- end of icons-->
-          </div> <!-- end of right col -->
-        </div> <!-- end of content -->
-      </div> <!-- end of about-wrapper -->
+            </div>  
+          </div> 
+        </div> 
+      </div> 
     </section>
     <section id="projects">
       <div class="section-wrapper project-wrapper">
@@ -180,9 +180,14 @@
           <h2>Projects</h2>
         </div>
         <div
-        class="row gx-5 about-content d-flex justify-content-center"
+        class="row gx-5 gy-10 project-content d-flex justify-content-center"
       >
-        <div class="col-lg-6 d-flex flex-column">
+      <div class="col-lg-6 d-flex flex-column justify-content-start project-card">
+        <div class="image-wrapper">
+          <img class="project-img" src="./img/wdiw.png" alt="What do I Watch?" />
+        </div> 
+      </div> 
+        <div class="col-lg-6 d-flex flex-column project-card">
           <div class="project-left">
             <h3>What do I Watch?</h3>
             <p>
@@ -199,17 +204,13 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-6 d-flex flex-column justify-content-start about-right">
-          <div class="image-wrapper">
-            <img class="project-img" src="./img/wdiw.png" alt="What do I Watch?" />
-          </div> 
-        </div> 
-        <div class="col-lg-6 d-flex flex-column justify-content-start about-right">
+
+        <div class="col-lg-6 d-flex flex-column justify-content-start project-card">
           <div class="image-wrapper">
             <img class="project-img" src="./img/git.png" alt="What do I Watch?" />
           </div> 
         </div> 
-        <div class="col-lg-6 d-flex flex-column">
+        <div class="col-lg-6 d-flex flex-column project-card">
 
           <div class="project-left">
             <h3>Get it Together</h3>
@@ -227,8 +228,60 @@
             </div>
           </div>
         </div>
-        
+        <div class="col-lg-6 d-flex flex-column justify-content-start project-card">
+          <div class="image-wrapper">
+            <img class="project-img" src="./img/github.png" alt="What do I Watch?" />
+          </div> 
+        </div> 
+        <div class="col-lg-6 d-flex flex-column project-card">
+          <div class="project-left">
+            <h3>And More!</h3>
+            <p>
+              I have developed many of the internal and client facing tools we
+              use and am always looking for opportunites to learn and to make cool things.
+            </p>
+            <div class="about-cv">
+              <a
+                href="files/Brian.McGaughan.pdf"
+                target="_blank"
+                class="read-more btn btn--bg d-inline-flex align-items-center justify-content-center align-self-center"
+                >Check out My CV <i class="bi bi-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
       </div> 
+    </section>
+    <section id="contact">
+      <div class="section-wrapper contact-wrapper">
+        <div class="section-header contact-header">
+          <h2>Contact Me</h2>
+        </div>
+        <div class="wrapper">
+          <div class="inner">
+            <form action="">
+              <p>Want to get in touch? Drop me a note below.</p>
+              <label class="form-group">
+                <input type="text" class="form-control"  required>
+                <span>Your Name</span>
+                <span class="border"></span>
+              </label>
+              <label class="form-group">
+                <input type="text" class="form-control"  required>
+                <span for="">Your Mail</span>
+                <span class="border"></span>
+              </label>
+              <label class="form-group" >
+                <textarea name="" id="" class="form-control" required></textarea>
+                <span for="">Your Message</span>
+                <span class="message-bd"></span>
+              </label>
+              <button>Submit 
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
     </section>
 
     <script
