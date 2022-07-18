@@ -244,6 +244,15 @@ section {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
+.project-card a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+.github-link a {
+  color: white;
+}
+
 /*CONTACT FORM*/
 
 #contact input,
@@ -439,7 +448,7 @@ textarea.form-control {
 
 .info-alert {
   position: absolute;
-  color:red
+  color: red;
 }
 
 /*FOOTER*/
