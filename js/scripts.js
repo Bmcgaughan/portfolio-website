@@ -1,5 +1,10 @@
 'use strict';
 
+(function() {
+    emailjs.init("D7Spd4bf9d_Owlxj1");
+    emailjs
+})();
+
 const header = document.querySelector('#header');
 const nav = document.querySelector('#navigation');
 const navHeight = nav.getBoundingClientRect().height;
@@ -52,3 +57,37 @@ $(window).scroll(() => {
     });
   }
 });
+
+
+//event listener for contact form
+
+const contactSubmit = document.querySelector('.email-submit');
+
+contactSubmit.addEventListener('click', (e) => {
+    e.preventDefault();
+    const name = document.querySelector('.name').value;
+    const email = document.querySelector('.email').value;
+    const message = document.querySelector('.message').value;
+    
+    const data = {
+        name,
+        email,
+        message
+    }
+
+    emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
+    .then(function(response) {
+       console.log('SUCCESS!', response.status, response.text);
+    }, function(error) {
+       console.log('FAILED...', error);
+    });
+
+
+    console.log(data)
+})
+
+
+
+
+
+
