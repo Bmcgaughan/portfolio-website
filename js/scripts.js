@@ -119,6 +119,7 @@ contactSubmit.addEventListener('click', (e) => {
 
     emailjs.send('service_3etrxrk', 'template_ppf1r9o', data).then(
       function (response) {
+        alert('Message sent! Thanks!');
         console.log('SUCCESS!', response.status, response.text);
       },
       function (error) {
