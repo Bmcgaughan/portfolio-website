@@ -1,8 +1,7 @@
 'use strict';
 
-(function() {
-    emailjs.init("D7Spd4bf9d_Owlxj1");
-    emailjs
+(function () {
+  emailjs.init('D7Spd4bf9d_Owlxj1');
 })();
 
 const header = document.querySelector('#header');
@@ -58,36 +57,58 @@ $(window).scroll(() => {
   }
 });
 
-
 //event listener for contact form
+
+const validateEmail = (email) => {
+  return String(email)
+    .toLowerCase()
+    .match(
+      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+    );
+};
 
 const contactSubmit = document.querySelector('.email-submit');
 
 contactSubmit.addEventListener('click', (e) => {
-    e.preventDefault();
-    const name = document.querySelector('.name').value;
-    const email = document.querySelector('.email').value;
-    const message = document.querySelector('.message').value;
-    
+  e.preventDefault();
+
+  const name = document.querySelector('.name').value;
+  const email = document.querySelector('.email').value;
+  const alertEmail = document.querySelector('.info-alert.email');
+  const message = document.querySelector('.message').value;
+  const alertMessage = document.querySelector('.info-alert.message');
+
+  let validated = true;
+
+  if (!validateEmail(email)) {
+    alertEmail.textContent = 'Please enter a valid email address';
+    validated = false;
+  } else {
+    alertEmail.textContent = '';
+  }
+
+  if (message === '') {
+    alertMessage.textContent = 'Please enter a message';
+    validated = false;
+  } else {
+    alertMessage.textContent = '';
+  }
+
+  if (validated) {
     const data = {
-        name,
-        email,
-        message
-    }
+      from_name: name,
+      from_email: email,
+      message: message,
+    };
 
-    emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
-    .then(function(response) {
-       console.log('SUCCESS!', response.status, response.text);
-    }, function(error) {
-       console.log('FAILED...', error);
-    });
+//     emailjs.send('service_3etrxrk', 'template_ppf1r9o', data).then(
+//       function (response) {
+//         console.log('SUCCESS!', response.status, response.text);
+//       },
+//       function (error) {
+//         console.log('FAILED...', error);
+//       }
+//     );
+//   }
 
-
-    console.log(data)
-})
-
-
-
-
-
-
+});

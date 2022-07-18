@@ -437,6 +437,11 @@ textarea.form-control {
   transform: translateX(4px);
 }
 
+.info-alert {
+  position: absolute;
+  color:red
+}
+
 /*FOOTER*/
 
 #footer a {

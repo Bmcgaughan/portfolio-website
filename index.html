@@ -29,6 +29,7 @@
 
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
   </head>
   <body>
     <div class="container-fluid">
@@ -241,21 +242,24 @@
             <form action="">
               <p>Want to get in touch? Drop me a note below.</p>
               <label class="form-group">
-                <input type="text" class="form-control"  required>
+                <input type="text" class="form-control name" required>
                 <span>Your Name</span>
                 <span class="border"></span>
               </label>
               <label class="form-group">
-                <input type="text" class="form-control"  required>
-                <span for="">Your Mail</span>
+                <input type="text" class="form-control email"  required>
+                <span for="">Email</span>
                 <span class="border"></span>
+                <div class="info-alert email"></div>
               </label>
+              
               <label class="form-group" >
-                <textarea name="" id="" class="form-control" required></textarea>
+                <textarea name="message" id="" class="form-control message" required></textarea>
                 <span for="">Your Message</span>
                 <span class="message-bd"></span>
+                <div class="info-alert message"></div>
               </label>
-              <button>Submit 
+              <button class="email-submit">Submit 
               </button>
             </form>
           </div>
