@@ -4,6 +4,8 @@
   emailjs.init('D7Spd4bf9d_Owlxj1');
 })();
 
+
+//handling navigation bar sticky and visible
 const header = document.querySelector('#header');
 const nav = document.querySelector('#navigation');
 const navHeight = nav.getBoundingClientRect().height;
@@ -31,8 +33,8 @@ const headerObserver = new IntersectionObserver(stickyNav, {
 
 headerObserver.observe(header);
 
-//updating navbar on scroll
 
+//updating navbar on scroll
 $(window).scroll(() => {
   const windscroll = $(window).scrollTop();
   if (windscroll >= navHeight) {
@@ -57,8 +59,25 @@ $(window).scroll(() => {
   }
 });
 
-//event listener for contact form
+//handling knowmore
+//return element offsets for scrolling
+function getOffset(id) {
+    const element = document.querySelector(id);
+    const elementPosition = element.getBoundingClientRect().top;
+    const offSet = elementPosition + window.pageYOffset - navHeight;
+    return offSet;
+  }
 
+
+//click event for knowmore
+$('.read-more').click(function (e) {
+    e.preventDefault();
+    const id = e.target.getAttribute('href');
+    console.log(id);
+    window.scrollTo({ top: getOffset(id), behavior: 'smooth' });
+  });
+
+//event listener for contact form
 const validateEmail = (email) => {
   return String(email)
     .toLowerCase()
@@ -101,14 +120,14 @@ contactSubmit.addEventListener('click', (e) => {
       message: message,
     };
 
-//     emailjs.send('service_3etrxrk', 'template_ppf1r9o', data).then(
-//       function (response) {
-//         console.log('SUCCESS!', response.status, response.text);
-//       },
-//       function (error) {
-//         console.log('FAILED...', error);
-//       }
-//     );
-//   }
+    // emailjs.send('service_3etrxrk', 'template_ppf1r9o', data).then(
+    //   function (response) {
+    //     console.log('SUCCESS!', response.status, response.text);
+    //   },
+    //   function (error) {
+    //     console.log('FAILED...', error);
+    //   }
+    // );
+  }
 
 });
