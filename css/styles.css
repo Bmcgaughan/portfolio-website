@@ -624,4 +624,17 @@ textarea.form-control {
   #contact .inner p {
     margin-bottom: 10px;
   }
+
+  .github-link {
+    text-align: center;
+  }
+
+  .btn--bg {
+    min-width: 125px;
+    font-size: 0.75rem;
+  }
+
+  .project-left a {
+    font-size: var(--bs-body-font-size);
+  }
 }
