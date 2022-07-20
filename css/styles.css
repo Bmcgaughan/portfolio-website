@@ -160,6 +160,10 @@ body {
   color: white;
 }
 
+.visible-xs {
+  display: none;
+}
+
 .hero-btn {
   margin-top: 2rem;
   text-align: center;
@@ -229,10 +233,6 @@ section {
   transform: translateX(-50%);
   border-radius: 5px;
 }
-
-
-
-
 
 /* ABOUT SECTION STYLES */
 
@@ -487,14 +487,13 @@ textarea.form-control {
 
 .back-link {
   align-items: center;
-
 }
 
 .stdy-btn {
   min-width: 150px;
 }
 
-.case-img{
+.case-img {
   padding-bottom: 15px;
 }
 
@@ -576,9 +575,15 @@ textarea.form-control {
   }
 
   .footer-contact p,
-  h4,
-  a {
+  .footer-contact h4,
+  .footer-links h4,
+  .footer-links a,
+  .foot-cred {
     font-size: 0.75rem;
+  }
+
+  .foot-cred {
+    padding-top: 5px;
   }
 
   .footer-soc a {
@@ -618,6 +623,18 @@ textarea.form-control {
 }
 
 @media (max-width: 430px) {
+  .visible-xs {
+    display: block;
+  }
+
+  .visible-large {
+    display: none;
+  }
+
+  .proj-btn {
+    margin-bottom: 5px;
+  }
+
   .navig-title {
     display: none !important;
   }
@@ -631,11 +648,11 @@ textarea.form-control {
   }
 
   .header-soc a > i {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
   .heading-primary {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   .heading-secondary {
@@ -643,7 +660,7 @@ textarea.form-control {
   }
 
   .text-primary {
-    font-size: 0.75rem;
+    font-size: 1rem;
   }
 
   #contact,
@@ -661,11 +678,11 @@ textarea.form-control {
   }
 
   #contact .inner {
-    padding-top: 0px;
+    padding-top: 5px;
   }
 
   #contact .inner p {
-    margin-bottom: 10px;
+    margin-bottom: 40px;
   }
 
   .github-link {
@@ -679,5 +696,14 @@ textarea.form-control {
 
   .project-left a {
     font-size: var(--bs-body-font-size);
+  }
+
+  .case-wrapper {
+    max-width: none;
+  }
+
+  .case-title h4 {
+    font-size: 1rem;
+    font-weight: bold;
   }
 }
