@@ -253,6 +253,10 @@ section {
   color: white;
 }
 
+.proj-btn {
+  min-width: 150px;
+}
+
 /*CONTACT FORM*/
 
 #contact input,
