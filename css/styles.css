@@ -214,6 +214,26 @@ section {
   border-radius: 5px;
 }
 
+.case-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.case-header::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 25%;
+  background: var(--secondary-color);
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+}
+
+
+
+
+
 /* ABOUT SECTION STYLES */
 
 .coding-icons img {
@@ -453,6 +473,29 @@ textarea.form-control {
 .info-alert {
   position: absolute;
   color: red;
+}
+
+/*CASE STUDY*/
+
+.case-wrapper {
+  max-width: 65%;
+}
+
+.tmdb-logo {
+  height: 11px;
+}
+
+.back-link {
+  align-items: center;
+
+}
+
+.stdy-btn {
+  min-width: 150px;
+}
+
+.case-img{
+  padding-bottom: 15px;
 }
 
 /*FOOTER*/
