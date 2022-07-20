@@ -553,7 +553,7 @@ textarea.form-control {
   }
 
   .heading-secondary {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 
   .text-primary {
@@ -561,7 +561,7 @@ textarea.form-control {
   }
 
   .header-soc a > i {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
   }
 
   #contact,
@@ -583,11 +583,11 @@ textarea.form-control {
   }
 
   .foot-cred {
-    padding-top: 5px;
+    padding-top: 10px;
   }
 
   .footer-soc a {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
   [class*='col-lg'] {
@@ -644,23 +644,23 @@ textarea.form-control {
   }
 
   .hero-btn a {
-    font-size: 0.75rem;
+    font-size: 1rem;
   }
 
   .header-soc a > i {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
   }
 
   .heading-primary {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
   }
 
   .heading-secondary {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 
   .text-primary {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
 
   #contact,
@@ -679,6 +679,7 @@ textarea.form-control {
 
   #contact .inner {
     padding-top: 5px;
+    min-width: 100%;
   }
 
   #contact .inner p {
