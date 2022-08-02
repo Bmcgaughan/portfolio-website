@@ -560,8 +560,8 @@ textarea.form-control {
   stroke: white;
   fill: transparent;
   stroke-width: 1px;
-  animation: arrow 2s infinite;
-  -webkit-animation: arrow 2s infinite;
+  animation: arrow 3.5s infinite;
+  -webkit-animation: arrow 3.5s infinite;
 }
 
 @keyframes arrow {
