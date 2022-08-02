@@ -531,6 +531,21 @@ textarea.form-control {
 
 /*SCROLL SVG*/
 
+.swiper {
+  width: 100%;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: var(--secondary-color)
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 2rem;
+}
+
+
 .arrows {
   width: 60px;
   height: 72px;
@@ -538,7 +553,7 @@ textarea.form-control {
   left: 50%;
   transform: translateX(-50%);
   /* margin-left: -30px; */
-  bottom: -80px
+  bottom: -80px;
 }
 
 .arrows path {
@@ -564,7 +579,7 @@ textarea.form-control {
   }
 }
 
-@-webkit-keyframes arrow  {
+@-webkit-keyframes arrow {
   0% {
     opacity: 0;
   }

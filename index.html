@@ -29,8 +29,13 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
 
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script
       type="text/javascript"
@@ -201,49 +206,57 @@
             <div
               class="col-lg-6 d-flex flex-column justify-content-start project-card"
             >
-              <div class="image-wrapper">
-                <img
-                  class="project-img"
-                  src="./img/wdiw.png"
-                  alt="What do I Watch?"
-                />
-              </div>
-              <div class="image-wrapper">
-                <img
-                  class="project-img"
-                  src="./img/wdiw_2.png"
-                  alt="What do I Watch?"
-                />
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="image-wrapper">
+                      <img
+                        class="project-img"
+                        src="./img/wdiw.png"
+                        alt="What do I Watch?"
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="image-wrapper">
+                      <img
+                        class="project-img"
+                        src="./img/wdiw3.png"
+                        alt="What do I Watch?"
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="image-wrapper">
+                      <img
+                        class="project-img"
+                        src="./img/wdiw_2.png"
+                        alt="What do I Watch?"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
               </div>
             </div>
             <div class="col-lg-6 d-flex flex-column project-card">
               <div class="project-left">
                 <h3>What do I Watch?</h3>
                 <p>
-                  Site built with React to help answer the question - what do I
-                  watch tonight?<br />
+                  Site built with MERN stack (and Redux) to help answer the question - what do I
+                  watch tonight?
                   It leverages
                   <a href="https://www.themoviedb.org/" target="_blank"
                     >The Movie Database API(s)</a
                   >
                   to get the top trending shows each week and also provide
-                  recomendations based on what you 'favorite' and if you have
-                  favorites in common with other users. Click a show image to
-                  get a plot summary and search for similar shows.
-                </p>
-                <p>
-                  Back End built using Node.js, Express, Passport, Mongoose and
-                  MongoDB and hosted on Heroku
+                  recomendations.
                   <a
-                    href="https://github.com/Bmcgaughan/myMovie-app"
-                    target="_blank"
-                    >check out the back-end on github</a
-                  >
-                </p>
-                <p>
-                  Front End built with React, Redux, and Swiper.js and hosted on
-                  Netlify
-                </p>
+                  href="https://github.com/Bmcgaughan/myMovie-app"
+                  target="_blank"
+                  >Check out the back-end on Github.</a
+                ></p>     
                 <p>
                   Give it a Try (Demo user gets reset every 2 hours)<br />Username:
                   DemoUser<br />Password: Demo@1
@@ -278,13 +291,39 @@
             <div
               class="col-lg-6 d-flex flex-column justify-content-start project-card"
             >
-              <div class="image-wrapper">
-                <img
-                  class="project-img"
-                  src="./img/meet-welcome.png"
-                  alt="What do I Watch?"
-                />
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="image-wrapper">
+                    <img
+                      class="project-img"
+                      src="./img/meet-welcome.png"
+                      alt="What do I Watch?"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="image-wrapper">
+                    <img
+                      class="project-img"
+                      src="./img/meet2.png"
+                      alt="What do I Watch?"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="image-wrapper">
+                    <img
+                      class="project-img"
+                      src="./img/meet3.png"
+                      alt="What do I Watch?"
+                    />
+                  </div>
+                </div>
               </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
             </div>
             <div class="col-lg-6 d-flex flex-column project-card">
               <div class="project-left">
@@ -511,6 +550,7 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/scripts.js"></script>
   </body>
 </html>

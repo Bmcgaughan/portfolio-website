@@ -4,6 +4,24 @@
   emailjs.init('D7Spd4bf9d_Owlxj1');
 })();
 
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+
+});
+
 //handling navigation bar sticky and visible
 const header = document.querySelector('#header');
 const nav = document.querySelector('#navigation');
