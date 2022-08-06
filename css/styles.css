@@ -255,6 +255,32 @@ section {
   transform: translateY(-25);
 }
 
+.hidden {
+  display: none;
+}
+
+.rating {
+  position: absolute;
+  font-size: 0.65rem;
+  animation: fade 3s linear forwards;
+  animation-timing-function: ease;
+}
+
+.full-star {
+  color: orange;
+  fill: orange;
+}
+
+@keyframes fade {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
 @keyframes spring {
   0% {
     transform: scale(1) translateY(0);

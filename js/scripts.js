@@ -84,20 +84,43 @@ function getOffset(id) {
 
 const imageIcons = document.querySelectorAll('.coding-icons > img');
 
+const ratingElements = document.querySelectorAll('.rating');
+
+//unhide rating element
+const showRating = (element, top, left) => {
+  element.classList.remove('hidden');
+  element.style.top = String(top) + 'px';
+  element.style.left = String(left) + 'px';
+};
+
+const hideRating = (element) => {
+  element.classList.add('hidden');
+};
+
 //mouse over imageIcons
 imageIcons.forEach((element) => {
-//get animation delat from element
-  let animDelay = element.style.animationDelay
-  console.log(animDelay);
+  //get class name of element
+  const className = element.className;
+  let animDelay = element.style.animationDelay;
   element.addEventListener('mouseover', () => {
     element.style.removeProperty('animation-delay');
     element.classList.add('icon-hover');
     setAnimations(false);
+    //get offset of element
+    let top = element.getBoundingClientRect().top;
+    let left = element.getBoundingClientRect().left;
+    //add offset to top and left
+    top += window.pageYOffset - navHeight + 50;
+    left += window.pageXOffset + 5;
+    //show ratingElement that contains className
+    showRating(document.querySelector(`.${className}`), top, left);
   });
+
   element.addEventListener('mouseout', () => {
     element.style.animationDelay = animDelay;
     element.classList.remove('icon-hover');
     setAnimations(true);
+    hideRating(document.querySelector(`.${className}`));
   });
 });
 
@@ -120,7 +143,6 @@ setAnimations(true);
 $('.read-more').click(function (e) {
   e.preventDefault();
   const id = e.target.getAttribute('href');
-  console.log(id);
   window.scrollTo({ top: getOffset(id), behavior: 'smooth' });
 });
 
