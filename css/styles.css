@@ -239,7 +239,6 @@ section {
 .coding-icons img {
   width: 75px;
   height: 75px;
-
   padding: 1px 5px 1px 5px;
 }
 
@@ -784,6 +783,11 @@ textarea.form-control {
 }
 
 @media (max-width: 430px) {
+
+  .rating {
+    font-size: 0.4rem;
+  }
+
   .visible-xs {
     display: block;
   }

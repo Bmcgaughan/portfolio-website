@@ -89,6 +89,9 @@ const ratingElements = document.querySelectorAll('.rating');
 //unhide rating element
 const showRating = (element, top, left) => {
   element.classList.remove('hidden');
+  if (screen.width < 430) {
+    top -= 20;
+  }
   element.style.top = String(top) + 'px';
   element.style.left = String(left) + 'px';
 };
