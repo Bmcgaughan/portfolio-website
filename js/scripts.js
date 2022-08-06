@@ -18,8 +18,6 @@ const swiper = new Swiper('.swiper', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-
-
 });
 
 //handling navigation bar sticky and visible
@@ -83,6 +81,40 @@ function getOffset(id) {
   const offSet = elementPosition + window.pageYOffset - navHeight;
   return offSet;
 }
+
+const imageIcons = document.querySelectorAll('.coding-icons > img');
+
+//mouse over imageIcons
+imageIcons.forEach((element) => {
+//get animation delat from element
+  let animDelay = element.style.animationDelay
+  console.log(animDelay);
+  element.addEventListener('mouseover', () => {
+    element.style.removeProperty('animation-delay');
+    element.classList.add('icon-hover');
+    setAnimations(false);
+  });
+  element.addEventListener('mouseout', () => {
+    element.style.animationDelay = animDelay;
+    element.classList.remove('icon-hover');
+    setAnimations(true);
+  });
+});
+
+//set animations on all elements selected
+const setAnimations = (go) => {
+  if (go) {
+    imageIcons.forEach((element) => {
+      element.classList.add('icon-animate');
+    });
+  } else {
+    imageIcons.forEach((element) => {
+      element.classList.remove('icon-animate');
+    });
+  }
+};
+
+setAnimations(true);
 
 //click event for knowmore
 $('.read-more').click(function (e) {
