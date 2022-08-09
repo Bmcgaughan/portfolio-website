@@ -336,7 +336,21 @@ section {
   width: 100%;
   overflow: visible;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  align-items: center;
 }
+
+.chat-wrapper {
+  display: flex;
+  height: 350px;
+  align-items: center;
+  justify-content: center;
+}
+
+.chat-img {
+  width: auto;
+  height: 100%;
+}
+
 
 .project-card a {
   text-decoration: none;

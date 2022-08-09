@@ -6,13 +6,14 @@
 
 const swiper = new Swiper('.swiper', {
   // Optional parameters
+  preloadImages: false,
   direction: 'horizontal',
   loop: true,
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
   },
-
+  lazy: true,
   // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
