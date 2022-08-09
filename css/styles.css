@@ -794,6 +794,13 @@ textarea.form-control {
 }
 
 @media (max-width: 430px) {
+  .chat-wrapper {
+    display: flex;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+  }
+
   .rating {
     font-size: 0.4rem;
   }
